@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from myapp.sample import add
 
-print("test running from VSCode...")
+print("test running...")
 
 def test_add_num():
     assert add(1, 2) == 3
@@ -22,6 +22,4 @@ class TestSample:
         assert add("a", "b") == "ab"
 
 
-print("test finished corected in vs")
-
-print("confirmed from Eclipse")
+print("test finished")
