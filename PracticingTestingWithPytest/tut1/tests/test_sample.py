@@ -23,3 +23,5 @@ class TestSample:
 
 
 print("test finished corected in vs")
+
+print("confirmed from Eclipse")
