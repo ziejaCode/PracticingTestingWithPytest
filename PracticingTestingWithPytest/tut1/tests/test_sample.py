@@ -22,4 +22,4 @@ class TestSample:
         assert add("a", "b") == "ab"
 
 
-print("test finished")
+print("test finished corected in vs")
