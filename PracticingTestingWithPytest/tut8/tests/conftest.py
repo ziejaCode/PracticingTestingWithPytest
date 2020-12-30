@@ -5,9 +5,9 @@ import pytest
 from tut8.myapp.student import Student
 
 
-@pytest.fixture
+@pytest.fixture(params=[21, 19], ids=["ineligible", "eligible"])
 def dummy_student(request):
-    return Student("nikhil", datetime(2000, 1, 1), "coe", request.param)
+    return Student("sam", datetime(2000, 1, 1), "coe", request.param)
 
 
 @pytest.fixture

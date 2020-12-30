@@ -22,7 +22,7 @@ def test_student_is_eligible_for_degree_true(make_dummy_student):
 def test_student_is_eligible_for_degree(make_dummy_student, credits, expected):
     assert is_eligible_for_degree(make_dummy_student("sam", credits)) is expected
 
-
+# different way using value instead of factory
 @pytest.mark.parametrize("dummy_student,expected", [(19, False), (21, True)],
                          indirect=["dummy_student"],
                          ids=["ineligible", "eligible"])

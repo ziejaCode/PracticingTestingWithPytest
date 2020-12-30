@@ -5,7 +5,7 @@ import pytest
 from tut6.myapp.student import Student
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture (scope="function")
 def dummy_student():
     print("making dummy student")
     return Student("nikhil", datetime(2000, 1, 1), "coe")
@@ -22,4 +22,4 @@ def test_student_add_credits(dummy_student):
 
 
 def test_student_get_credits(dummy_student):
-    assert dummy_student.get_credits() == 0
+    assert dummy_student.get_credits() == 5
