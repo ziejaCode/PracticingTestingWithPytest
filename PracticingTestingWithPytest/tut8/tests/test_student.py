@@ -28,3 +28,5 @@ def test_student_is_eligible_for_degree(make_dummy_student, credits, expected):
                          ids=["ineligible", "eligible"])
 def test_student_is_eligible_for_degree(dummy_student, expected):
     assert is_eligible_for_degree(dummy_student) is expected
+
+# hello from VSCode
